@@ -1,71 +1,118 @@
-# 🦖 DinoRun 3D 🎮
+<h1 align="center">🦖 DinoRun 3D 🎮</h1>
+<p align="center">
+  Welcome to <strong>DinoRun 3D</strong>, an exciting endless runner inspired by the infamous Chrome dino game.
+</p>
 
-Welcome to **DinoRun 3D**, an exciting endless runner inspired by the infamous chrome dino game
+<hr>
 
----
+<h2 align="center">🎥 Game Screenshots</h2>
+<p align="center">
+  <img src="start_screen.png" width="200" style="margin-right: 10px;" />
+  <img src="end_screen.png" width="200" />
+</p>
 
-## 🎥 Gameplay Preview
-📸 *[Picture to be added]*
+<hr>
 
----
+<h2 align="center">🚀 Features</h2>
+<p align="center">
+  ✅ <strong>Fast-paced endless running action</strong><br>
+  ✅ <strong>Obstacles that keep you on your toes</strong><br>
+  ✅ <strong>Dynamic spawning system for endless fun</strong><br>
+  ✅ <strong>Simple, fun, and addictive gameplay</strong><br>
+  ✅ <strong>Colorful 3D graphics</strong> 🎨
+</p>
 
-## 🚀 Features
-✅ **Fast-paced endless running action**  
-✅ **Obstacles that keep you on your toes**  
-✅ **Dynamic spawning system for endless fun**  
-✅ **Simple, fun, and addictive gameplay**  
-✅ **Colorful 3D graphics** 🎨
+<hr>
 
----
+<h2 align="center">🎮 Controls</h2>
+<p align="center">
+  🕹️ <strong>Jump:</strong> <code>Spacebar</code> or <code>MB1</code>
+</p>
 
-## 🎮 Controls
-🕹️ **Jump:** `Spacebar`  or `MB1`  
+<hr>
 
----
+<h2 align="center">🛠️ How the Game Works (Under the Hood)</h2>
+<p align="center">
+  DinoRun 3D follows a structured game logic powered by Unity scripts.
+</p>
 
-## 🛠️ How the Game Works (Under the Hood)
-DinoRun 3D follows a structured game logic powered by Unity scripts:
+<h3 align="center">1️⃣ GameManager.cs (Core Game Logic)</h3>
+<p align="center">
+  - Handles <strong>game state</strong> (start, restart, and game over).<br>
+  - Controls <strong>game speed</strong>, increasing difficulty over time.<br>
+  - Updates <strong>score</strong> and <strong>high score</strong>.<br>
+  - Manages <strong>UI elements</strong> (buttons, score display, animations).
+</p>
 
-### **1️⃣ GameManager.cs** (Core Game Logic)
-- Handles **game state** (start, restart, and game over).
-- Controls **game speed**, increasing difficulty over time.
-- Updates **score** and **high score**.
-- Manages **UI elements** (buttons, score display, animations).
+<h3 align="center">2️⃣ PlayerController.cs (Dino Movement)</h3>
+<p align="center">
+  - Detects <strong>player inputs</strong> to jump.<br>
+  - Ensures <strong>ground detection</strong> to prevent mid-air jumps.<br>
+  - <strong>Plays sound effects</strong> for jumping and collisions.<br>
+  - Stops the game if the player <strong>hits an obstacle</strong>.
+</p>
 
-### **2️⃣ PlayerController.cs** (Dino Movement)
-- Detects **player inputs** to jump.
-- Ensures **ground detection** to prevent mid-air jumps.
-- **Plays sound effects** for jumping and collisions.
-- Stops the game if the player **hits an obstacle**.
+<h3 align="center">3️⃣ Spawner.cs (Obstacle Generation)</h3>
+<p align="center">
+  - Spawns <strong>random obstacles</strong> at different intervals.<br>
+  - Uses a <strong>weighted probability system</strong> to control spawn rates.<br>
+  - Continuously generates obstacles unless the game is over.
+</p>
 
-### **3️⃣ Spawner.cs** (Obstacle Generation)
-- Spawns **random obstacles** at different intervals.
-- Uses a **weighted probability system** to control spawn rates.
-- Continuously generates obstacles unless the game is over.
+<h3 align="center">4️⃣ Obstacle.cs (Obstacle Behavior)</h3>
+<p align="center">
+  - Moves obstacles toward the player at the <strong>current game speed</strong>.<br>
+  - <strong>Destroys obstacles</strong> once they leave the screen to optimize performance.
+</p>
 
-### **4️⃣ Obstacle.cs** (Obstacle Behavior)
-- Moves obstacles toward the player at the **current game speed**.
-- **Destroys obstacles** once they leave the screen to optimize performance.
+<hr>
 
----
+<h2 align="center">📥 Installation Instructions</h2>
 
-## 📦 Installation & Running the Game
-1️⃣ Clone the repository:  
-```sh
- git clone https://github.com/S1MS4/DinoRun-3d.git
-```
-2️⃣ Open the project in **Unity** 🎮  
-3️⃣ Press **Click the screen or hit spacebar** and start running! 🦖💨  
+<h3 align="center">Option 1️⃣: Clone the Entire Repository (Recommended)</h3>
+<p align="center">
+  <code>git clone https://github.com/S1MS4/DinoRun-3d.git</code>
+</p>
+<p align="center">
+  This will download both the <strong>Game</strong> and <strong>Game Files</strong> folders.
+</p>
+<p align="center">
+  Open the project in <strong>Unity</strong> and/or start playing immediately from the <strong>Game</strong> folder alone! 🎮
+</p>
+
+<h3 align="center">Option 2️⃣: Download Game & Game Files Separately</h3>
+<p align="center">
+  1️⃣ <strong>Download the Game Folder</strong><br>
+  - Click on the <strong>Game</strong> folder → Click Download<br><br>
+<p align="center">
+  2️⃣ <strong>Download the Game Files Folder</strong><br>
+  - Click on the <strong>Game Files</strong> folder → Click Download<br><br>
+<p align="center">
+  3️⃣ <strong>Move the Game Files folder into your Unity project directory</strong><br>
+  - Open the project in <strong>Unity</strong> and start playing! 🦖
+</p>
 
 
-## 🤝 Contributing
-Want to help make **DinoRun 3D** even better? Feel free to fork, submit issues, or create pull requests! 🛠️  
+<h3 align="center">🔧 How to Start Playing</h3>
+<p align="center">
+  1️⃣ Open the project in <strong>Unity</strong> or open the .exe in the <strong>Game</strong> folder 🎮<br>
+  2️⃣ Click the screen or hit <code>spacebar</code> to start running! 🦖💨
+</p>
 
----
+<hr>
 
-## 📜 License
-This project is **open-source**! Feel free to modify and share. 😊
+<h2 align="center">🤝 Contributing</h2>
+<p align="center">
+  Want to help make <strong>DinoRun 3D</strong> even better? Feel free to fork, submit issues, or create pull requests! 🛠️
+</p>
 
----
+<hr>
 
-### 🌟 Don't forget to ⭐ the repo if you enjoy the game! Happy running! 🦖💨
+<h2 align="center">📜 License</h2>
+<p align="center">
+  This project is <strong>open-source</strong>! Feel free to modify and share. 😊
+</p>
+
+<hr>
+
+<h3 align="center">🌟 Don't forget to ⭐ the repo if you found this helpful! 💨</h3>
