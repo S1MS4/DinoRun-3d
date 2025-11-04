@@ -1,118 +1,33 @@
-<h1 align="center">🦖 DinoRun 3D 🎮</h1>
-<p align="center">
-  Welcome to <strong>DinoRun 3D</strong>, an exciting endless runner inspired by the infamous Chrome dino game.
-</p>
+# DinoRun 3D
 
-<hr>
+DinoRun 3D is a simple endless runner game inspired by the classic Chrome Dino game. This project was created a long time ago as a learning exercise in Unity and 3D game development.
 
-<h2 align="center">🎥 Game Screenshots</h2>
-<p align="center">
-  <img src="start_screen.png" width="200" style="margin-right: 10px;" />
-  <img src="end_screen.png" width="200" />
-</p>
+## Features
 
-<hr>
+- Fast-paced endless running gameplay  
+- Randomly spawned obstacles with increasing difficulty  
+- Score tracking with high score persistence  
+- Basic ground detection to prevent mid-air jumps  
+- Automatic cleanup of off-screen obstacles for performance  
+- Simple controls: jump with Spacebar or left mouse button  
 
-<h2 align="center">🚀 Features</h2>
-<p align="center">
-  ✅ <strong>Fast-paced endless running action</strong><br>
-  ✅ <strong>Obstacles that keep you on your toes</strong><br>
-  ✅ <strong>Dynamic spawning system for endless fun</strong><br>
-  ✅ <strong>Simple, fun, and addictive gameplay</strong><br>
-  ✅ <strong>Colorful 3D graphics</strong> 🎨
-</p>
+## How to Run
 
-<hr>
+### Option 1: Play the Standalone Build
+1. Download the **Game** folder from the repository.
+2. Run the executable (.exe) file inside the folder.
 
-<h2 align="center">🎮 Controls</h2>
-<p align="center">
-  🕹️ <strong>Jump:</strong> <code>Spacebar</code> or <code>MB1</code>
-</p>
+### Option 2: Open in Unity
+1. Clone or download the entire repository.
+2. Import the **Game Files** folder into a new Unity project.
+3. Open the main scene and press Play in the Unity Editor.
 
-<hr>
+## Controls
+- **Jump**: Spacebar or Left Mouse Button  
+- **Start/Restart**: Click the screen or press Spacebar  
 
-<h2 align="center">🛠️ How the Game Works (Under the Hood)</h2>
-<p align="center">
-  DinoRun 3D follows a structured game logic powered by Unity scripts.
-</p>
+## Notes
+This project is shared as-is and was developed some time ago. It may not follow current best practices or Unity versions, but it remains a functional example of a basic 3D runner game.
 
-<h3 align="center">1️⃣ GameManager.cs (Core Game Logic)</h3>
-<p align="center">
-  - Handles <strong>game state</strong> (start, restart, and game over).<br>
-  - Controls <strong>game speed</strong>, increasing difficulty over time.<br>
-  - Updates <strong>score</strong> and <strong>high score</strong>.<br>
-  - Manages <strong>UI elements</strong> (buttons, score display, animations).
-</p>
-
-<h3 align="center">2️⃣ PlayerController.cs (Dino Movement)</h3>
-<p align="center">
-  - Detects <strong>player inputs</strong> to jump.<br>
-  - Ensures <strong>ground detection</strong> to prevent mid-air jumps.<br>
-  - <strong>Plays sound effects</strong> for jumping and collisions.<br>
-  - Stops the game if the player <strong>hits an obstacle</strong>.
-</p>
-
-<h3 align="center">3️⃣ Spawner.cs (Obstacle Generation)</h3>
-<p align="center">
-  - Spawns <strong>random obstacles</strong> at different intervals.<br>
-  - Uses a <strong>weighted probability system</strong> to control spawn rates.<br>
-  - Continuously generates obstacles unless the game is over.
-</p>
-
-<h3 align="center">4️⃣ Obstacle.cs (Obstacle Behavior)</h3>
-<p align="center">
-  - Moves obstacles toward the player at the <strong>current game speed</strong>.<br>
-  - <strong>Destroys obstacles</strong> once they leave the screen to optimize performance.
-</p>
-
-<hr>
-
-<h2 align="center">📥 Installation Instructions</h2>
-
-<h3 align="center">Option 1️⃣: Clone the Entire Repository (Recommended)</h3>
-<p align="center">
-  <code>git clone https://github.com/S1MS4/DinoRun-3d.git</code>
-</p>
-<p align="center">
-  This will download both the <strong>Game</strong> and <strong>Game Files</strong> folders.
-</p>
-<p align="center">
-  Open the project in <strong>Unity</strong> and/or start playing immediately from the <strong>Game</strong> folder alone! 🎮
-</p>
-
-<h3 align="center">Option 2️⃣: Download Game & Game Files Separately</h3>
-<p align="center">
-  1️⃣ <strong>Download the Game Folder</strong><br>
-  - Click on the <strong>Game</strong> folder → Click Download<br><br>
-<p align="center">
-  2️⃣ <strong>Download the Game Files Folder</strong><br>
-  - Click on the <strong>Game Files</strong> folder → Click Download<br><br>
-<p align="center">
-  3️⃣ <strong>Move the Game Files folder into your Unity project directory</strong><br>
-  - Open the project in <strong>Unity</strong> and start playing! 🦖
-</p>
-
-
-<h3 align="center">🔧 How to Start Playing</h3>
-<p align="center">
-  1️⃣ Open the project in <strong>Unity</strong> or open the .exe in the <strong>Game</strong> folder 🎮<br>
-  2️⃣ Click the screen or hit <code>spacebar</code> to start running! 🦖💨
-</p>
-
-<hr>
-
-<h2 align="center">🤝 Contributing</h2>
-<p align="center">
-  Want to help make <strong>DinoRun 3D</strong> even better? Feel free to fork, submit issues, or create pull requests! 🛠️
-</p>
-
-<hr>
-
-<h2 align="center">📜 License</h2>
-<p align="center">
-  This project is <strong>open-source</strong>! Feel free to modify and share. 😊
-</p>
-
-<hr>
-
-<h3 align="center">🌟 Don't forget to ⭐ the repo if you found this helpful! 💨</h3>
+## License
+This project is open-source. Feel free to use, modify, and share it.
